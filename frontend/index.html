@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Job Application Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container main-container">
+
+<h1 class="title">HR Recruitment Dashboard</h1>
+
+<!-- FORM CARD -->
+
+<div class="card form-card">
+
+<h4 class="form-title">Add Job Application</h4>
+
+<div class="row g-3">
+
+<div class="col-md-6">
+<input id="name" class="form-control" placeholder="Candidate Name">
+</div>
+
+<div class="col-md-6">
+<input id="email" class="form-control" placeholder="Email">
+</div>
+
+<div class="col-md-6">
+<input id="phone" class="form-control" placeholder="Phone Number">
+</div>
+
+<div class="col-md-6">
+<input id="position" class="form-control" placeholder="Position Applied">
+</div>
+
+<div class="col-md-6">
+<input id="experience" type="number" class="form-control" placeholder="Experience (Years)">
+</div>
+
+<div class="col-md-6">
+<select id="status" class="form-control">
+<option>Applied</option>
+<option>Shortlisted</option>
+<option>Rejected</option>
+<option>Hired</option>
+</select>
+</div>
+
+<div class="col-md-6">
+<input id="interviewDate" type="date" class="form-control">
+</div>
+
+<div class="col-md-12">
+<button class="btn add-btn w-100" onclick="addApplication()">
+Add Application
+</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- SEARCH + FILTER -->
+
+<div class="search-section">
+
+<input id="searchInput" class="form-control search-box" placeholder="Search Candidate">
+
+<select id="filterStatus" class="form-control filter-box" onchange="filterStatus()">
+
+<option value="">Filter Status</option>
+<option>Applied</option>
+<option>Shortlisted</option>
+<option>Rejected</option>
+<option>Hired</option>
+
+</select>
+
+</div>
+
+<!-- TABLE -->
+
+<div class="table-card">
+
+<table class="table table-hover align-middle">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Position</th>
+<th>Experience</th>
+<th>Status</th>
+<th>Interview</th>
+<th>Created</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

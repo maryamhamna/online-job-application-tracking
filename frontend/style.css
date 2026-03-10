@@ -1,0 +1,170 @@
+body{
+
+background: linear-gradient(135deg,#667eea,#764ba2);
+min-height:100vh;
+font-family:'Segoe UI',sans-serif;
+color:white;
+
+}
+
+/* container */
+
+.main-container{
+
+padding-top:40px;
+max-width:1200px;
+
+}
+
+/* title */
+
+.title{
+
+text-align:center;
+font-weight:700;
+margin-bottom:30px;
+letter-spacing:1px;
+
+}
+
+/* form card */
+
+.form-card{
+
+padding:30px;
+border-radius:15px;
+background:white;
+color:black;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+transition:0.3s;
+
+}
+
+.form-card:hover{
+
+transform:translateY(-3px);
+
+}
+
+.form-title{
+
+font-weight:600;
+margin-bottom:20px;
+
+}
+
+/* inputs */
+
+.form-control{
+
+height:45px;
+border-radius:10px;
+border:1px solid #ddd;
+
+}
+
+/* button */
+
+.add-btn{
+
+background:linear-gradient(90deg,#4facfe,#00f2fe);
+border:none;
+font-weight:600;
+padding:12px;
+border-radius:10px;
+color:white;
+transition:0.3s;
+
+}
+
+.add-btn:hover{
+
+background:linear-gradient(90deg,#00c6ff,#0072ff);
+transform:scale(1.03);
+
+}
+
+/* search filter */
+
+.search-section{
+
+margin-top:25px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.search-box{
+
+flex:2;
+
+}
+
+.filter-box{
+
+flex:1;
+
+}
+
+/* table */
+
+.table-card{
+
+background:white;
+border-radius:15px;
+padding:20px;
+margin-top:25px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+overflow-x:auto;
+color:black;
+
+}
+
+/* table header */
+
+thead{
+
+background:linear-gradient(90deg,#4facfe,#00f2fe);
+color:white;
+
+}
+
+/* hover row */
+
+tbody tr:hover{
+
+background:#f2f6ff;
+transition:0.2s;
+
+}
+
+/* hired highlight */
+
+.table-success{
+
+background:#d4f8d4 !important;
+font-weight:600;
+
+}
+
+/* delete button */
+
+.btn-danger{
+
+border-radius:6px;
+font-size:13px;
+
+}
+
+/* responsive */
+
+@media(max-width:768px){
+
+.search-section{
+
+flex-direction:column;
+
+}
+
+}
