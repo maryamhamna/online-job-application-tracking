@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: 'myagent'
+  name: 'devagent'
 steps:
 - task: Maven@3
   inputs:
