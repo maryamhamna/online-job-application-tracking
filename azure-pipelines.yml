@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: 'myrepo'
+  name: 'appol'
 steps:
 - task: Maven@3
   inputs:
